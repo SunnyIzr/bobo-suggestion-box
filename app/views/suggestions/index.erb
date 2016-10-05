@@ -1,0 +1,5 @@
+<ul>
+  <% @suggestions.each do |suggestion| %>
+    <li><a href='/suggestions/<%= suggestion.id %>'><%= suggestion.comment %></a></li>
+  <% end %>
+</ul>

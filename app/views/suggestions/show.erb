@@ -1,0 +1,7 @@
+<h2><%= @suggestion.comment %></h2>
+<p>&mdash;<%= @suggestion.author %></p>
+<a href='/suggestions/<%= @suggestion.id %>/edit'>Edit</a>
+<form action='/suggestions/<%= @suggestion.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete'>
+  <input type='submit' value='delete'>
+</form>
